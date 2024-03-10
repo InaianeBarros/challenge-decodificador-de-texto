@@ -1,4 +1,41 @@
+:root{
+    --cor-do-texto: #0A3871;
+    --cor-do-fundo: #EFF1FA;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--cor-do-fundo)
+}
+
 body {
-    background-color: #EFF1FA;
-    color: #0A3871;
+    height: 100vh;
+    color: var(--cor-do-texto);
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100px;
+}
+
+.apresentacao { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10%;
+}
+
+.apresentacao_logo{
+    width: 120px;
+    margin: 10%;
+
+}
+
+.apresentacao_conteudo{
+    width: 680px; 
+    height: 48px; 
 }
