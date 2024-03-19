@@ -13,29 +13,31 @@
         </header>
         <main>
             <section class="conteudo_esquerda"> 
-                <h1> Digite seu texto</h1>
+                <textarea class="mensagem__textarea" placeholder="Digite seu texto" maxlength="200"></textarea>
                 <div>
                     <div class="conteudo_esquerda_exclamacao">
                         <img src="./assets/exclamacao.png" alt="imagem de exclamação">
                         <h6>Apenas letras minúsculas e sem acento.</h6>
                     </div>
                     <div class="conteudo_esquerda_botoes">
-                        <a class="botao_criptografar"> Criptografar</a>
-                        <a class="botao_descriptografar"> Descriptografar</a>
+                        <input type="button" class="botao_criptografar" value="Criptografar">
+                        <input type="button" class="botao_descriptografar" value="Descriptografar">
                     </div>
                 </div>
             </section>
             <section class="conteudo_direita">
+                <p class="resultado_direita"></p>
                 <img class="conteudo_direita_imagem" src="./assets/imagem.png" alt="imagem de pessoa buscando">
                 <h3 class="conteudo_direita_texto">Nenhuma mensagem encontrada</h3>
                 <p class="conteudo_direita_paragrafo"> Digite um texto que você deseja criptografar ou descriptografar.</p>
-                <a class="botao_copiar"> Copiar</a>
+                <button onclick="copiar()" class="botao_copiar"> Copiar</button>
             </section>
         </main>
         <footer class="rodape">
             <p> inaiane.mbarros@gmail.com</p>
-        </footer>
-    </body>
+        </footer>`
 
+        <script src="app.js" defer></script>
+    </body>
 
 </html>
